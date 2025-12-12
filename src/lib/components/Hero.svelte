@@ -47,8 +47,8 @@
 		<div class="relative w-full aspect-[21/9] overflow-hidden border-4 border-navy">
 			<!-- Hero Image -->
 			<img 
-				src="/generated/image-prestigious-banking-institution-boardroo-1765569349528-0.webp" 
-				alt="Prestigious banking institution boardroom" 
+				src="/generated/image-diverse-group-of-business-professionals--1765567878019-2.webp" 
+				alt="Modern work environment with business professionals" 
 				class="absolute inset-0 w-full h-full object-cover"
 			/>
 			
