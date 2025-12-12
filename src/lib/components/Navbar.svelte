@@ -1,8 +1,22 @@
-<nav class="border-b-2 border-navy bg-cream sticky top-0 z-50">
+<script lang="ts">
+	import { onMount } from 'svelte';
+	
+	let navVisible = $state(false);
+	
+	onMount(() => {
+		// Slide down animation on mount
+		setTimeout(() => navVisible = true, 100);
+	});
+</script>
+
+<nav class={[
+	'border-b-2 border-navy bg-cream sticky top-0 z-50 transition-all duration-700',
+	navVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
+]}>
 	<div class="container-custom h-20 flex items-center justify-between">
 		<!-- Logo -->
-		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-3">
-			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-navy">
+		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-3 transition-all duration-300 hover:scale-105">
+			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-navy transition-colors duration-300 hover:text-gold">
 				<path
 					fill-rule="evenodd"
 					clip-rule="evenodd"
@@ -15,15 +29,15 @@
 
 		<!-- Links -->
 		<div class="hidden md:flex items-center gap-10 font-mono text-xs text-navy uppercase tracking-wider">
-			<a href="#how-we-work" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">How We Work</a>
-			<a href="#what-we-do" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">What We Do</a>
-			<a href="#who-we-serve" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">Who We Serve</a>
-			<a href="#why-us" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">Why Us</a>
+			<a href="#how-we-work" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">How We Work</a>
+			<a href="#what-we-do" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">What We Do</a>
+			<a href="#who-we-serve" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">Who We Serve</a>
+			<a href="#why-us" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">Why Us</a>
 		</div>
 
 		<!-- CTA -->
 		<div class="flex items-center gap-4">
-			<a href="#contact" class="hidden md:flex items-center gap-2 border-2 border-navy bg-navy text-cream px-4 py-2 text-xs font-mono hover:bg-forest hover:border-forest transition-all duration-300 uppercase tracking-wider">
+			<a href="#contact" class="hidden md:flex items-center gap-2 border-2 border-navy bg-navy text-cream px-4 py-2 text-xs font-mono hover:bg-forest hover:border-forest transition-all duration-300 uppercase tracking-wider hover:scale-105">
 				Book a Discovery Call
 				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
