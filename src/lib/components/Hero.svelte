@@ -1,37 +1,67 @@
-<section class="pt-20 pb-12 overflow-hidden">
+<section class="pt-20 pb-16 overflow-hidden">
 	<div class="container-custom">
-		<div class="max-w-4xl mb-12">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-4">
-				AIs are the web's new user
+		<div class="max-w-4xl mb-8">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-6">
+				Qualified Demand for Companies With Sophisticated Buyers
 			</h1>
-			<p class="text-2xl md:text-3xl text-muted font-light">
-				The highest accuracy web search <span class="text-accent">for your AI</span>
+			<p class="text-xl md:text-2xl text-muted font-light mb-6">
+				We help operators in complex industries build predictable, high-quality pipeline — without referrals, guesswork, or risky lead gen.
 			</p>
+			<p class="text-sm text-muted mb-8 max-w-2xl">
+				Specialists in markets where buyers are careful, stakes are high, and message precision matters.
+			</p>
+
+			<!-- Supporting Bullets -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-3xl">
+				<div class="flex items-start gap-2">
+					<svg class="w-5 h-5 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+					</svg>
+					<span class="text-sm">Predictable access to hard-to-reach markets</span>
+				</div>
+				<div class="flex items-start gap-2">
+					<svg class="w-5 h-5 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+					</svg>
+					<span class="text-sm">Built for brand-sensitive industries</span>
+				</div>
+				<div class="flex items-start gap-2">
+					<svg class="w-5 h-5 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+					</svg>
+					<span class="text-sm">Advisory-led strategy, not a vendor model</span>
+				</div>
+			</div>
+
+			<!-- CTAs -->
+			<div class="flex flex-wrap gap-4">
+				<a href="#contact" class="bg-foreground text-background px-6 py-3 text-sm font-mono uppercase hover:bg-foreground/90 transition-colors flex items-center gap-2">
+					Book a Discovery Call
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
+					</svg>
+				</a>
+				<a href="#results" class="border border-border px-6 py-3 text-sm font-mono uppercase hover:bg-primary-50 transition-colors">
+					See Recent Wins
+				</a>
+			</div>
 		</div>
 
-		<div class="relative w-full aspect-[2/1] bg-blue-500 rounded-sm overflow-hidden group">
-			<!-- Abstract Globe Representation -->
-			<div class="absolute inset-0 bg-gradient-to-b from-[#4A90E2] to-[#0056b3]"></div>
+		<div class="relative w-full aspect-[21/9] bg-gray-950 rounded-sm overflow-hidden">
+			<!-- Hero Image -->
+			<img 
+				src="/generated/image-professional-business-advisory-meeting-e-1765567871526-0.webp" 
+				alt="Professional advisory meeting" 
+				class="absolute inset-0 w-full h-full object-cover"
+			/>
 			
-			<!-- Grid Overlay -->
-			<div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 40px 40px;"></div>
+			<!-- Subtle overlay for text readability -->
+			<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 			
-			<!-- Dot Pattern -->
-			<div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 20px 20px;"></div>
-			
-			<!-- Globe Sphere Effect -->
-			<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 translate-x-1/2"></div>
-			<div class="absolute bottom-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_center_bottom,_rgba(255,255,255,0.4)_0%,_transparent_70%)]"></div>
-
-			<!-- Digital Noise / Glitch elements -->
-			<div class="absolute top-10 left-20 w-32 h-32 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg==')]"></div>
-			<div class="absolute bottom-20 right-40 w-48 h-24 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg==')]"></div>
-
-			<!-- Floating Badge -->
-			<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-lg border border-white/50 flex items-center gap-2 text-xs font-mono">
-				<span>A Parallel Web for AIs</span>
-				<div class="w-4 h-4 rounded-full bg-gray-200 overflow-hidden">
-					<img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="w-full h-full" />
+			<!-- Content overlay -->
+			<div class="absolute inset-0 flex items-end justify-start p-8">
+				<div class="inline-block border border-white/20 bg-black/40 backdrop-blur-sm px-6 py-3 rounded text-white text-sm font-mono">
+					Advisory-Grade Demand Generation
 				</div>
 			</div>
 		</div>

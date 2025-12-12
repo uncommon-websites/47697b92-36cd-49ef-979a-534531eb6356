@@ -1,103 +1,119 @@
-<section class="py-20 border-b border-border">
+<section id="how-we-work" class="py-20 border-b border-border">
 	<div class="container-custom">
-		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
-			<div>
-				<h2 class="text-3xl font-medium mb-2">Highest accuracy at every price point</h2>
-				<p class="text-xl text-muted font-light">State of the art across several benchmarks</p>
-			</div>
-			<div class="max-w-xs text-[10px] text-muted leading-relaxed border-l border-border pl-4">
-				<strong class="text-foreground block mb-1">About this benchmark</strong>
-				This benchmark consists of 2,500 questions developed by subject matter experts across dozens of subjects (e.g. math, humanities, natural sciences). Each question has a known solution that is unambiguous and easily verifiable, but requires sophisticated web retrieval and reasoning. Results are reported on a sample of 100 questions from this benchmark. Learn more in our <a href="#" class="underline">latest blog</a>.
-			</div>
+		<div class="mb-16">
+			<h2 class="text-3xl font-medium mb-3">How We Work</h2>
+			<p class="text-xl text-muted font-light max-w-2xl">
+				Structured, advisory-grade process for sophisticated buyers
+			</p>
 		</div>
 
-		<div class="relative w-full h-[500px] border border-border bg-primary-50/30 p-8 font-mono text-xs">
-			<!-- Chart Grid -->
-			<div class="absolute inset-0 p-8 grid grid-rows-6 grid-cols-1">
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
-			</div>
-			
-			<!-- Y Axis Label -->
-			<div class="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-muted origin-center whitespace-nowrap">
-				ACCURACY (%)
-			</div>
-
-			<!-- X Axis Label -->
-			<div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-muted">
-				COST (CPM)
-			</div>
-
-			<!-- Top Left Legend -->
-			<div class="absolute top-4 left-4 flex gap-4 text-[10px] text-muted">
-				<span class="bg-gray-200 px-1 rounded text-foreground">MMLU-Search</span>
-				<span>BrowseComp Search</span>
-				<span>BrowseComp</span>
-				<span>DeepResearch Bench</span>
-				<span>WISER-Atomic</span>
-			</div>
-
-			<!-- Data Points -->
-			
-			<!-- Parallel (The Winner) -->
-			<div class="absolute top-[15%] left-[15%] flex flex-col items-center group cursor-pointer z-10">
-				<div class="flex items-center gap-2 mb-1">
-					<span class="text-accent font-bold">PARALLEL</span>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+			<!-- Step 1 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">01</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="w-3 h-3 bg-accent rounded-full shadow-[0_0_0_4px_rgba(255,68,0,0.2)]"></div>
-				<div class="mt-1 text-[10px] text-accent">67% / $2CPM</div>
+				<h3 class="font-medium text-sm">Selective Engagement & Fit</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					We work with a limited number of clients. Engagement begins only with executive intent and alignment.
+				</p>
 			</div>
 
-			<!-- OpenAI GPT-4 -->
-			<div class="absolute top-[25%] left-[45%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
-					<span class="font-bold">OPENAI GPT-4</span>
+			<!-- Step 2 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">02</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">65% / $15CPM</div>
+				<h3 class="font-medium text-sm">Full-Funnel Commercial Diligence</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					We assess the entire revenue system: demand → qualification → sales → close. This is where vendors fail. We don't.
+				</p>
 			</div>
 
-			<!-- Perplexity -->
-			<div class="absolute top-[55%] left-[35%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">PERPLEXITY</span>
+			<!-- Step 3 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">03</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">30% / $10CPM</div>
+				<h3 class="font-medium text-sm">Scope & Risk-Managed Structure</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					2–6 weeks to validate assumptions, define qualified demand, and structure outcome-tied engagements with defensible ROI.
+				</p>
 			</div>
 
-			<!-- ERA -->
-			<div class="absolute top-[65%] left-[40%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">ERA</span>
+			<!-- Step 4 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">04</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">24% / $15CPM</div>
+				<h3 class="font-medium text-sm">Rigorous Onboarding</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					Leadership interviews, analyst research, buyer mapping, message architecture, and brand guardrails.
+				</p>
 			</div>
 
-			<!-- TAVILY -->
-			<div class="absolute top-[80%] right-[20%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">TAVILY</span>
+			<!-- Step 5 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">05</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">21% / $30CPM</div>
+				<h3 class="font-medium text-sm">Channel-Agnostic Execution</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					We deploy demand systems based on where buyers actually are — using enterprise-safe, reputation-first infrastructure.
+				</p>
 			</div>
 
-			<!-- Bottom Right Legend -->
-			<div class="absolute bottom-4 right-4 flex items-center gap-4 text-[10px]">
-				<div class="flex items-center gap-1">
-					<div class="w-2 h-2 bg-accent rounded-full"></div>
-					<span class="text-accent font-bold">PARALLEL</span>
+			<!-- Step 6 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">06</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
-				<div class="flex items-center gap-1">
-					<div class="w-2 h-2 bg-black rounded-full"></div>
-					<span class="text-muted">OTHERS</span>
+				<h3 class="font-medium text-sm">Multi-Disciplinary Team</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					Advisors, former founders, sales leaders, analysts, operators, and trusted vendors (75+ years combined experience).
+				</p>
+			</div>
+
+			<!-- Step 7 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">07</span>
+					<div class="h-px bg-border flex-1"></div>
 				</div>
+				<h3 class="font-medium text-sm">Pipeline Delivery & Validation</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					Qualified conversations benchmarked to your ACV, LTV, and sales cycle. Leadership-level visibility throughout.
+				</p>
+			</div>
+
+			<!-- Step 8 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">08</span>
+					<div class="h-px bg-border flex-1"></div>
+				</div>
+				<h3 class="font-medium text-sm">ROI-Driven Engagements</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					Clear milestones, conservative modeling, downside protection.
+				</p>
+			</div>
+
+			<!-- Step 9 -->
+			<div class="border border-border p-6 space-y-3 hover:border-accent/30 transition-colors">
+				<div class="flex items-center gap-3 mb-2">
+					<span class="font-mono text-xs text-muted">09</span>
+					<div class="h-px bg-border flex-1"></div>
+				</div>
+				<h3 class="font-medium text-sm">Ongoing Advisory & Optimization</h3>
+				<p class="text-xs text-muted leading-relaxed">
+					Continuous refinement of data, messaging, execution, and reporting. Systems compound over time.
+				</p>
 			</div>
 		</div>
 	</div>

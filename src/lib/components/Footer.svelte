@@ -1,117 +1,92 @@
 <footer class="pt-20 pb-8">
 	<div class="container-custom">
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
-			<!-- Logo Column -->
-			<div class="lg:col-span-2">
-				<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-2 mb-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+			<!-- Block 1: Company Identity -->
+			<div class="lg:col-span-1">
+				<a href="/" class="text-lg font-bold tracking-tight flex items-center gap-2 mb-4">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-foreground">
-						<path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2"/>
-						<path d="M8 4V20" stroke="currentColor" stroke-width="2"/>
-						<path d="M16 4V20" stroke="currentColor" stroke-width="2"/>
-						<path d="M4 12H20" stroke="currentColor" stroke-width="2"/>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M5.0473 17.8386L5.69453 18.9586V18.9601H18.3003L18.9314 17.84H6.34063L6.82626 16.9993H19.4308L20.078 15.8807H7.47237L7.95715 15.0414H16.0358L16.0366 15.0429L16.0375 15.0414H20.5603L20.5612 15.0429L21.2084 13.9228L21.208 13.922L21.2084 13.9213H21.2075L14.9084 3.00677L14.9106 3.00296L14.9062 3.00296L13.6177 3.00296L5.0473 17.8386ZM14.261 4.12767L13.7751 4.96887L18.9438 13.9213H19.9139L14.261 4.12767ZM13.1286 6.08808L12.6467 6.9225L16.6749 13.9006L16.6634 13.9213H17.6511L13.1286 6.08808ZM11.9999 8.04225L8.60411 13.9213H15.3899L11.9999 8.04225ZM6.99833 3.30006C7.33866 3.10343 7.7248 2.99993 8.11786 3L2.30033 13.0776C2.10357 12.7371 2 12.3508 2 11.9575C2 11.5643 2.10357 11.178 2.30033 10.8375L6.17916 4.12006C6.37543 3.77951 6.65798 3.49669 6.99833 3.30006ZM9.08869 3H10.3816L3.43223 15.0384L2.785 13.9184L9.08869 3ZM11.3509 3H12.6424L4.56262 16.9963L3.91691 15.8777L11.3509 3ZM21.7064 13.0598C21.8988 12.7254 22 12.3463 22 11.9605C22 11.5746 21.8988 11.1956 21.7064 10.8611L17.8039 4.10233C17.6108 3.7681 17.3331 3.49057 16.9987 3.2976C16.6644 3.10463 16.2852 3.00302 15.8992 3.00296H15.8741L21.6931 13.082L21.7064 13.0598ZM17.7995 19.7994H6.17916C6.37472 20.1412 6.65692 20.4253 6.99728 20.6232C7.33763 20.8212 7.72414 20.9258 8.11786 20.9269H15.8829C16.2737 20.9261 16.6572 20.8212 16.994 20.6231C17.3309 20.4249 17.6089 20.1406 17.7995 19.7994Z"
+							fill="currentColor"
+						/>
 					</svg>
 				</a>
+				<p class="text-xs text-muted mb-2">Avenfield Advisory</p>
+				<p class="text-xs text-muted">Revenue & Demand Advisory</p>
+				<p class="text-xs text-muted mt-2">
+					Parent: <a href="#" class="underline hover:text-foreground">Avenfield Capital</a>
+				</p>
 			</div>
 
-			<!-- Contact -->
+			<!-- Block 2: Page Anchors -->
 			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Contact</h4>
-				<ul class="space-y-2 text-xs font-mono text-muted">
-					<li><a href="mailto:hello@parallel.ai" class="hover:text-foreground">hello@parallel.ai</a></li>
+				<h4 class="font-mono text-xs uppercase text-muted mb-4">Navigate</h4>
+				<ul class="space-y-2 text-xs text-muted">
+					<li><a href="#hero" class="hover:text-foreground">Hero</a></li>
+					<li><a href="#how-we-work" class="hover:text-foreground">How We Work</a></li>
+					<li><a href="#what-we-do" class="hover:text-foreground">What We Do</a></li>
+					<li><a href="#who-we-serve" class="hover:text-foreground">Who We Serve</a></li>
+					<li><a href="#why-us" class="hover:text-foreground">Why Us</a></li>
+					<li><a href="#contact" class="hover:text-foreground">Book Call</a></li>
 				</ul>
 			</div>
 
-			<!-- Products -->
-			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Products</h4>
-				<ul class="space-y-2 text-xs font-mono text-muted">
-					<li><a href="#" class="hover:text-foreground">Search API</a></li>
-					<li><a href="#" class="hover:text-foreground">Extract API</a></li>
-					<li><a href="#" class="hover:text-foreground">Task API</a></li>
-					<li><a href="#" class="hover:text-foreground">FindAll API</a></li>
-					<li><a href="#" class="hover:text-foreground">Chat API</a></li>
-					<li><a href="#" class="hover:text-foreground">Monitor API</a></li>
-				</ul>
-			</div>
-
-			<!-- Resources -->
+			<!-- Block 3: Pages -->
 			<div>
 				<h4 class="font-mono text-xs uppercase text-muted mb-4">Resources</h4>
-				<ul class="space-y-2 text-xs font-mono text-muted">
-					<li><a href="#" class="hover:text-foreground">About</a></li>
-					<li><a href="#" class="hover:text-foreground">Pricing</a></li>
-					<li><a href="#" class="hover:text-foreground">Docs</a></li>
-					<li><a href="#" class="hover:text-foreground">Blog</a></li>
-					<li><a href="#" class="hover:text-foreground">Changelog</a></li>
-					<li><a href="#" class="hover:text-foreground">Careers</a></li>
-				</ul>
-			</div>
-
-			<!-- Info -->
-			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Info</h4>
-				<ul class="space-y-2 text-xs font-mono text-muted mb-8">
-					<li><a href="#" class="hover:text-foreground">Terms of Service</a></li>
-					<li><a href="#" class="hover:text-foreground">Customer Terms</a></li>
+				<ul class="space-y-2 text-xs text-muted">
+					<li><a href="#results" class="hover:text-foreground">Recent Successes</a></li>
+					<li><a href="#results" class="hover:text-foreground">Results</a></li>
+					<li><a href="#contact" class="hover:text-foreground">Contact</a></li>
 					<li><a href="#" class="hover:text-foreground">Privacy</a></li>
-					<li><a href="#" class="hover:text-foreground">Acceptable Use</a></li>
-					<li><a href="#" class="hover:text-foreground">Trust Center</a></li>
+					<li><a href="#" class="hover:text-foreground">Terms</a></li>
 				</ul>
-				
-				<!-- SOC 2 Badge -->
-				<div class="w-16 h-16 border-2 border-black rounded-full flex items-center justify-center relative">
-					<div class="absolute inset-0 rounded-full border border-white m-0.5"></div>
-					<div class="text-[8px] font-bold text-center leading-tight">
-						SOC 2<br>TYPE II
-					</div>
-					<div class="absolute -bottom-1 -right-1 w-4 h-4 bg-black rounded-full flex items-center justify-center text-white text-[8px]">✓</div>
-				</div>
 			</div>
-		</div>
 
-		<!-- Bottom Bar -->
-		<div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-border font-mono text-[10px] text-muted">
-			<div class="flex items-center gap-4">
-				<a href="#" class="hover:text-foreground">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-					</svg>
-				</a>
-				<a href="#" class="hover:text-foreground">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-					</svg>
-				</a>
-				<div class="flex items-center gap-2 ml-4">
-					<span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-					All Systems Operational
-				</div>
-			</div>
+			<!-- Block 4: Offices -->
 			<div>
-				Parallel Web Systems Inc. 2025
+				<h4 class="font-mono text-xs uppercase text-muted mb-4">Offices</h4>
+				<ul class="space-y-2 text-xs text-muted">
+					<li>Canada (Vancouver)</li>
+					<li>USA (Wyoming)</li>
+				</ul>
+			</div>
+
+			<!-- Block 5: Social -->
+			<div>
+				<h4 class="font-mono text-xs uppercase text-muted mb-4">Connect</h4>
+				<div class="flex items-center gap-4">
+					<a href="#" class="hover:text-foreground text-muted">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+						</svg>
+					</a>
+					<a href="#" class="hover:text-foreground text-muted">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+						</svg>
+					</a>
+					<a href="#" class="hover:text-foreground text-muted">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+						</svg>
+					</a>
+					<a href="#" class="hover:text-foreground text-muted">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Bottom Texture Strip -->
-	<div class="mt-8 h-32 w-full bg-[#111] relative overflow-hidden flex items-end justify-center pb-4">
-		<!-- Noise Texture -->
-		<div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg=='); background-size: 2px 2px;"></div>
-		
-		<!-- Glitch/Code Overlay -->
-		<div class="absolute inset-0 opacity-10 font-mono text-[8px] text-white overflow-hidden leading-none whitespace-pre-wrap break-all p-2 select-none pointer-events-none">
-			{Array(2000).fill(0).map(() => Math.random() > 0.5 ? '1' : '0').join('')}
-		</div>
-
-		<div class="relative z-10 flex items-center gap-4 text-[10px] font-mono text-white/50">
-			<div class="flex items-center gap-2 text-white">
-				<span class="w-2 h-2 bg-white rounded-full"></span>
-				HUMAN
-			</div>
-			<div class="flex items-center gap-2">
-				<span class="w-2 h-2 border border-white/50 rounded-full"></span>
-				MACHINE
-			</div>
+		<!-- Block 6: Legal / Bottom Bar -->
+		<div class="pt-8 border-t border-border">
+			<p class="text-xs text-muted text-center">
+				© 2025 Avenfield Advisory. All rights reserved.
+			</p>
 		</div>
 	</div>
 </footer>
