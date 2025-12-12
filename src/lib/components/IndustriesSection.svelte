@@ -12,33 +12,35 @@
 	];
 </script>
 
-<section class="py-20 border-b border-border overflow-hidden bg-gray-50">
+<section class="py-24 border-b-2 border-navy overflow-hidden bg-cream">
 	<div class="container-custom">
-		<div class="text-center mb-12">
-			<h2 class="text-2xl font-medium mb-3">Industries We Serve</h2>
-			<p class="text-sm text-muted max-w-2xl mx-auto">
+		<div class="text-center mb-16">
+			<div class="w-24 h-0.5 bg-gold mx-auto mb-6"></div>
+			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Industries We Serve</h2>
+			<p class="text-base text-foreground max-w-2xl mx-auto leading-relaxed">
 				Specialized expertise across brand-sensitive and complex markets
 			</p>
+			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
 		</div>
 		
 		<!-- Sliding Industries Container -->
 		<div class="relative">
 			<!-- Gradient overlays for fade effect -->
-			<div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
-			<div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+			<div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none"></div>
+			<div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none"></div>
 			
 			<!-- Scrolling content -->
 			<div class="industries-track">
 				<div class="industries-content">
 					{#each industries as industry}
 						<div class="industry-item">
-							<span class="text-sm font-medium text-foreground">{industry}</span>
+							<span class="text-sm font-display font-semibold text-navy">{industry}</span>
 						</div>
 					{/each}
 					<!-- Duplicate for seamless loop -->
 					{#each industries as industry}
 						<div class="industry-item">
-							<span class="text-sm font-medium text-foreground">{industry}</span>
+							<span class="text-sm font-display font-semibold text-navy">{industry}</span>
 						</div>
 					{/each}
 				</div>
@@ -63,16 +65,17 @@
 	
 	.industry-item {
 		flex-shrink: 0;
-		padding: 1rem 2rem;
-		border: 1px solid var(--border);
-		background: white;
+		padding: 1.25rem 2.5rem;
+		border: 2px solid var(--color-navy);
+		background: var(--color-background);
 		white-space: nowrap;
-		transition: transform 0.3s ease, border-color 0.3s ease;
+		transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 	}
 	
 	.industry-item:hover {
-		transform: translateY(-2px);
-		border-color: var(--accent);
+		transform: translateY(-3px);
+		border-color: var(--color-gold);
+		background: var(--color-cream);
 	}
 	
 	@keyframes scroll {

@@ -1,34 +1,35 @@
-<section id="contact" class="py-20 border-b border-border">
+<section id="contact" class="py-24 border-b-2 border-navy bg-navy text-cream">
 	<div class="container-custom">
 		<div class="max-w-3xl mx-auto text-center">
-			<h2 class="text-3xl md:text-4xl font-medium mb-6">
+			<div class="w-24 h-0.5 bg-gold mx-auto mb-8"></div>
+			<h2 class="text-4xl md:text-5xl font-display font-semibold mb-8 text-cream leading-tight">
 				Ready to Build Predictable Pipeline?
 			</h2>
-			<p class="text-lg text-muted mb-10 max-w-2xl mx-auto">
+			<p class="text-lg text-cream/90 mb-12 max-w-2xl mx-auto leading-relaxed">
 				We work with a limited number of clients. If you're a B2B executive facing pipeline unpredictability in brand-sensitive markets, let's explore fit.
 			</p>
 			
-			<div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-				<a href="#" class="bg-foreground text-background px-8 py-4 text-sm font-mono uppercase hover:bg-foreground/90 transition-colors inline-flex items-center justify-center gap-2">
+			<div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+				<a href="#" class="bg-gold text-navy px-10 py-5 text-sm font-mono uppercase hover:bg-cream hover:text-navy transition-all duration-300 inline-flex items-center justify-center gap-2 border-2 border-gold font-bold tracking-wider">
 					Book a Discovery Call
 					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
 					</svg>
 				</a>
-				<a href="#results" class="border border-border px-8 py-4 text-sm font-mono uppercase hover:bg-primary-50 transition-colors inline-flex items-center justify-center">
+				<a href="#results" class="border-2 border-cream text-cream px-10 py-5 text-sm font-mono uppercase hover:bg-cream hover:text-navy transition-all duration-300 inline-flex items-center justify-center tracking-wider">
 					View Recent Successes
 				</a>
 			</div>
 
-			<div class="border-t border-border pt-8">
-				<p class="text-xs text-muted mb-4">Trusted by operators in</p>
-				<div class="flex flex-wrap justify-center gap-6 text-xs text-muted">
+			<div class="border-t-2 border-gold/30 pt-10">
+				<p class="text-xs text-gold uppercase tracking-widest mb-6 font-mono">Trusted by operators in</p>
+				<div class="flex flex-wrap justify-center gap-8 text-sm text-cream/80 font-display">
 					<span>Institutional Finance</span>
-					<span>•</span>
+					<span class="text-gold">•</span>
 					<span>Private Equity</span>
-					<span>•</span>
+					<span class="text-gold">•</span>
 					<span>Enterprise Tech</span>
-					<span>•</span>
+					<span class="text-gold">•</span>
 					<span>Professional Services</span>
 				</div>
 			</div>

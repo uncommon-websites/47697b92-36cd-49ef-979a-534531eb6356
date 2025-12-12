@@ -1,10 +1,10 @@
-<footer class="pt-20 pb-8">
+<footer class="pt-24 pb-10 bg-navy text-cream border-t-4 border-gold">
 	<div class="container-custom">
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-20">
 			<!-- Block 1: Company Identity -->
 			<div class="lg:col-span-1">
-				<a href="/" class="text-lg font-bold tracking-tight flex items-center gap-2 mb-4">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-foreground">
+				<a href="/" class="text-lg font-display font-bold tracking-tight flex items-center gap-3 mb-6">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold">
 						<path
 							fill-rule="evenodd"
 							clip-rule="evenodd"
@@ -13,42 +13,44 @@
 						/>
 					</svg>
 				</a>
-				<p class="text-xs text-muted mb-2">Avenfield Advisory</p>
-				<p class="text-xs text-muted">Revenue & Demand Advisory</p>
-				<p class="text-xs text-muted mt-2">
-					Parent: <a href="#" class="underline hover:text-foreground">Avenfield Capital</a>
-				</p>
+				<div class="border-l-2 border-gold pl-4">
+					<p class="text-sm text-cream mb-2 font-display">Avenfield Advisory</p>
+					<p class="text-xs text-cream/70">Revenue & Demand Advisory</p>
+					<p class="text-xs text-cream/70 mt-3">
+						Parent: <a href="#" class="underline hover:text-gold transition-colors">Avenfield Capital</a>
+					</p>
+				</div>
 			</div>
 
 			<!-- Block 2: Page Anchors -->
 			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Navigate</h4>
-				<ul class="space-y-2 text-xs text-muted">
-					<li><a href="#hero" class="hover:text-foreground">Hero</a></li>
-					<li><a href="#how-we-work" class="hover:text-foreground">How We Work</a></li>
-					<li><a href="#what-we-do" class="hover:text-foreground">What We Do</a></li>
-					<li><a href="#who-we-serve" class="hover:text-foreground">Who We Serve</a></li>
-					<li><a href="#why-us" class="hover:text-foreground">Why Us</a></li>
-					<li><a href="#contact" class="hover:text-foreground">Book Call</a></li>
+				<h4 class="font-mono text-xs uppercase text-gold mb-6 tracking-widest border-b border-gold/30 pb-2">Navigate</h4>
+				<ul class="space-y-3 text-sm text-cream/80">
+					<li><a href="#hero" class="hover:text-gold transition-colors">Hero</a></li>
+					<li><a href="#how-we-work" class="hover:text-gold transition-colors">How We Work</a></li>
+					<li><a href="#what-we-do" class="hover:text-gold transition-colors">What We Do</a></li>
+					<li><a href="#who-we-serve" class="hover:text-gold transition-colors">Who We Serve</a></li>
+					<li><a href="#why-us" class="hover:text-gold transition-colors">Why Us</a></li>
+					<li><a href="#contact" class="hover:text-gold transition-colors">Book Call</a></li>
 				</ul>
 			</div>
 
 			<!-- Block 3: Pages -->
 			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Resources</h4>
-				<ul class="space-y-2 text-xs text-muted">
-					<li><a href="#results" class="hover:text-foreground">Recent Successes</a></li>
-					<li><a href="#results" class="hover:text-foreground">Results</a></li>
-					<li><a href="#contact" class="hover:text-foreground">Contact</a></li>
-					<li><a href="#" class="hover:text-foreground">Privacy</a></li>
-					<li><a href="#" class="hover:text-foreground">Terms</a></li>
+				<h4 class="font-mono text-xs uppercase text-gold mb-6 tracking-widest border-b border-gold/30 pb-2">Resources</h4>
+				<ul class="space-y-3 text-sm text-cream/80">
+					<li><a href="#results" class="hover:text-gold transition-colors">Recent Successes</a></li>
+					<li><a href="#results" class="hover:text-gold transition-colors">Results</a></li>
+					<li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+					<li><a href="#" class="hover:text-gold transition-colors">Privacy</a></li>
+					<li><a href="#" class="hover:text-gold transition-colors">Terms</a></li>
 				</ul>
 			</div>
 
 			<!-- Block 4: Offices -->
 			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Offices</h4>
-				<ul class="space-y-2 text-xs text-muted">
+				<h4 class="font-mono text-xs uppercase text-gold mb-6 tracking-widest border-b border-gold/30 pb-2">Offices</h4>
+				<ul class="space-y-3 text-sm text-cream/80">
 					<li>Canada (Vancouver)</li>
 					<li>USA (Wyoming)</li>
 				</ul>
@@ -56,25 +58,25 @@
 
 			<!-- Block 5: Social -->
 			<div>
-				<h4 class="font-mono text-xs uppercase text-muted mb-4">Connect</h4>
-				<div class="flex items-center gap-4">
-					<a href="#" class="hover:text-foreground text-muted">
+				<h4 class="font-mono text-xs uppercase text-gold mb-6 tracking-widest border-b border-gold/30 pb-2">Connect</h4>
+				<div class="flex items-center gap-5">
+					<a href="#" class="hover:text-gold text-cream/80 transition-colors">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
 						</svg>
 					</a>
-					<a href="#" class="hover:text-foreground text-muted">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<a href="#" class="hover:text-gold text-cream/80 transition-colors">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
 						</svg>
 					</a>
-					<a href="#" class="hover:text-foreground text-muted">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<a href="#" class="hover:text-gold text-cream/80 transition-colors">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
 						</svg>
 					</a>
-					<a href="#" class="hover:text-foreground text-muted">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<a href="#" class="hover:text-gold text-cream/80 transition-colors">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
 						</svg>
 					</a>
@@ -83,8 +85,8 @@
 		</div>
 
 		<!-- Block 6: Legal / Bottom Bar -->
-		<div class="pt-8 border-t border-border">
-			<p class="text-xs text-muted text-center">
+		<div class="pt-10 border-t-2 border-gold/30">
+			<p class="text-sm text-cream/70 text-center font-display">
 				© 2025 Avenfield Advisory. All rights reserved.
 			</p>
 		</div>

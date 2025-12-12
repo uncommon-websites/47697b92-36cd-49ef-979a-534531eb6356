@@ -1,43 +1,43 @@
 <!-- What We Do / Who We Serve Section -->
-<section id="what-we-do" class="py-16 border-b border-border">
+<section id="what-we-do" class="py-20 border-b-2 border-navy">
 	<div class="container-custom">
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
 			<!-- What We Do -->
-			<div>
-				<h2 class="text-2xl font-medium mb-6">What We Do</h2>
-				<p class="text-sm text-muted leading-relaxed mb-6">
+			<div class="border-l-4 border-gold pl-8">
+				<h2 class="text-3xl font-display font-semibold mb-6 text-navy">What We Do</h2>
+				<p class="text-base text-foreground leading-relaxed mb-6">
 					We build predictable, high-quality demand channels for companies with sophisticated buyers — often outperforming referrals.
 				</p>
 			</div>
 
 			<!-- Who We Serve -->
-			<div id="who-we-serve">
-				<h2 class="text-2xl font-medium mb-6">Who We Serve</h2>
-				<div class="space-y-4 text-sm">
+			<div id="who-we-serve" class="border-l-4 border-gold pl-8">
+				<h2 class="text-3xl font-display font-semibold mb-6 text-navy">Who We Serve</h2>
+				<div class="space-y-6 text-sm">
 					<div>
-						<h3 class="font-medium mb-2">Market Types</h3>
-						<ul class="text-muted space-y-1 text-xs">
-							<li>• Legacy & complex markets</li>
-							<li>• Fast-growth teams outpacing demand</li>
-							<li>• Referral-dependent businesses</li>
-							<li>• Companies with customer concentration risk</li>
+						<h3 class="font-display font-semibold mb-3 text-navy text-base">Market Types</h3>
+						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Legacy & complex markets</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Fast-growth teams outpacing demand</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Referral-dependent businesses</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Companies with customer concentration risk</li>
 						</ul>
 					</div>
 					<div>
-						<h3 class="font-medium mb-2">Commercial Profiles</h3>
-						<ul class="text-muted space-y-1 text-xs">
-							<li>• High ACV / long sales cycles</li>
-							<li>• Low ACV / brand-sensitive volume</li>
-							<li>• Existing outbound teams</li>
-							<li>• No outbound at all</li>
+						<h3 class="font-display font-semibold mb-3 text-navy text-base">Commercial Profiles</h3>
+						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> High ACV / long sales cycles</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Low ACV / brand-sensitive volume</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Existing outbound teams</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> No outbound at all</li>
 						</ul>
 					</div>
 					<div>
-						<h3 class="font-medium mb-2">Good-Fit Clients</h3>
-						<ul class="text-muted space-y-1 text-xs">
-							<li>• Clear sales KPIs and close rates</li>
-							<li>• Leadership alignment (Finance, Sales, Ops)</li>
-							<li>• Non-commodity offerings</li>
+						<h3 class="font-display font-semibold mb-3 text-navy text-base">Good-Fit Clients</h3>
+						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Clear sales KPIs and close rates</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Leadership alignment (Finance, Sales, Ops)</li>
+							<li class="flex items-start gap-2"><span class="text-gold">•</span> Non-commodity offerings</li>
 						</ul>
 					</div>
 				</div>
@@ -47,74 +47,82 @@
 </section>
 
 <!-- Where Our Advisory Excels -->
-<section class="py-16 border-b border-border bg-gray-50">
+<section class="py-20 border-b-2 border-navy bg-cream">
 	<div class="container-custom">
-		<h2 class="text-2xl font-medium mb-8">Where Our Advisory Excels</h2>
+		<div class="text-center mb-12">
+			<div class="w-24 h-0.5 bg-gold mx-auto mb-6"></div>
+			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Where Our Advisory Excels</h2>
+			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
+		</div>
 		
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			<div class="bg-white border border-border p-6 space-y-2">
-				<h3 class="font-medium text-sm">Hard-to-reach buyers</h3>
-				<p class="text-xs text-muted">Decision-makers who don't respond to traditional outreach</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+			<div class="bg-background border-2 border-navy p-8 space-y-3 hover:border-gold transition-all duration-300">
+				<h3 class="font-display font-semibold text-base text-navy">Hard-to-reach buyers</h3>
+				<p class="text-sm text-muted leading-relaxed">Decision-makers who don't respond to traditional outreach</p>
 			</div>
 			
-			<div class="bg-white border border-border p-6 space-y-2">
-				<h3 class="font-medium text-sm">Brand-sensitive markets</h3>
-				<p class="text-xs text-muted">Industries where reputation and trust are paramount</p>
+			<div class="bg-background border-2 border-navy p-8 space-y-3 hover:border-gold transition-all duration-300">
+				<h3 class="font-display font-semibold text-base text-navy">Brand-sensitive markets</h3>
+				<p class="text-sm text-muted leading-relaxed">Industries where reputation and trust are paramount</p>
 			</div>
 			
-			<div class="bg-white border border-border p-6 space-y-2">
-				<h3 class="font-medium text-sm">Complex, multi-stakeholder sales</h3>
-				<p class="text-xs text-muted">Long cycles requiring careful navigation</p>
+			<div class="bg-background border-2 border-navy p-8 space-y-3 hover:border-gold transition-all duration-300">
+				<h3 class="font-display font-semibold text-base text-navy">Complex, multi-stakeholder sales</h3>
+				<p class="text-sm text-muted leading-relaxed">Long cycles requiring careful navigation</p>
 			</div>
 			
-			<div class="bg-white border border-border p-6 space-y-2">
-				<h3 class="font-medium text-sm">Data-scarce environments</h3>
-				<p class="text-xs text-muted">Markets lacking reliable contact data or intelligence</p>
+			<div class="bg-background border-2 border-navy p-8 space-y-3 hover:border-gold transition-all duration-300">
+				<h3 class="font-display font-semibold text-base text-navy">Data-scarce environments</h3>
+				<p class="text-sm text-muted leading-relaxed">Markets lacking reliable contact data or intelligence</p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Problems We Solve -->
-<section class="py-16 border-b border-border">
+<section class="py-20 border-b-2 border-navy">
 	<div class="container-custom">
-		<h2 class="text-2xl font-medium mb-8">Problems We Solve</h2>
+		<div class="text-center mb-12">
+			<div class="w-24 h-0.5 bg-gold mx-auto mb-6"></div>
+			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Problems We Solve</h2>
+			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
+		</div>
 		
 		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Inconsistent pipeline</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Inconsistent pipeline</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Referral dependency</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Referral dependency</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">No dedicated demand channel</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">No dedicated demand channel</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Hard-to-reach buyers</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Hard-to-reach buyers</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Brand-sensitive markets</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Brand-sensitive markets</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Long, complex sales cycles</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Long, complex sales cycles</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Customer concentration risk</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Customer concentration risk</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">Underperforming outbound teams</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">Underperforming outbound teams</p>
 			</div>
 			
-			<div class="border border-border p-4 hover:border-accent/30 transition-colors">
-				<p class="text-sm">No forecasting visibility</p>
+			<div class="border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300">
+				<p class="text-sm font-display text-navy">No forecasting visibility</p>
 			</div>
 		</div>
 	</div>

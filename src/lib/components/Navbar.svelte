@@ -1,8 +1,8 @@
-<nav class="border-b border-border bg-background sticky top-0 z-50">
-	<div class="container-custom h-16 flex items-center justify-between">
+<nav class="border-b-2 border-navy bg-cream sticky top-0 z-50">
+	<div class="container-custom h-20 flex items-center justify-between">
 		<!-- Logo -->
-		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-2">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-foreground">
+		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-3">
+			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-navy">
 				<path
 					fill-rule="evenodd"
 					clip-rule="evenodd"
@@ -10,20 +10,20 @@
 					fill="currentColor"
 				/>
 			</svg>
-			<span class="font-sans font-semibold">Avenfield Advisory</span>
+			<span class="font-display font-semibold text-navy">Avenfield Advisory</span>
 		</a>
 
 		<!-- Links -->
-		<div class="hidden md:flex items-center gap-8 font-mono text-xs text-muted">
-			<a href="#how-we-work" class="hover:text-foreground transition-colors">How We Work</a>
-			<a href="#what-we-do" class="hover:text-foreground transition-colors">What We Do</a>
-			<a href="#who-we-serve" class="hover:text-foreground transition-colors">Who We Serve</a>
-			<a href="#why-us" class="hover:text-foreground transition-colors">Why Us</a>
+		<div class="hidden md:flex items-center gap-10 font-mono text-xs text-navy uppercase tracking-wider">
+			<a href="#how-we-work" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">How We Work</a>
+			<a href="#what-we-do" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">What We Do</a>
+			<a href="#who-we-serve" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">Who We Serve</a>
+			<a href="#why-us" class="hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold pb-1">Why Us</a>
 		</div>
 
 		<!-- CTA -->
 		<div class="flex items-center gap-4">
-			<a href="#contact" class="hidden md:flex items-center gap-2 border border-border px-3 py-1.5 text-xs font-mono hover:bg-primary-50 transition-colors uppercase">
+			<a href="#contact" class="hidden md:flex items-center gap-2 border-2 border-navy bg-navy text-cream px-4 py-2 text-xs font-mono hover:bg-forest hover:border-forest transition-all duration-300 uppercase tracking-wider">
 				Book a Discovery Call
 				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
@@ -31,7 +31,7 @@
 			</a>
 			<div class="md:hidden">
 				<!-- Mobile Menu Icon -->
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-navy">
 					<line x1="3" y1="12" x2="21" y2="12"></line>
 					<line x1="3" y1="6" x2="21" y2="6"></line>
 					<line x1="3" y1="18" x2="21" y2="18"></line>

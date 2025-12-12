@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-	/* Fonts */
-	--font-sans: 'Inter', sans-serif;
-	--font-mono: 'JetBrains Mono', monospace;
+	/* Fonts - Traditional Banking Aesthetic */
+	--font-sans: 'Georgia', 'Times New Roman', serif;
+	--font-mono: 'Courier New', monospace;
+	--font-display: 'Garamond', 'Georgia', serif;
 
-	/* Colors */
-	--color-background: #ffffff;
-	--color-foreground: #000000;
-	--color-muted: #666666;
-	--color-border: #e5e5e5;
-	--color-accent: oklch(0.596 0.145 163.225); /* Primary 600 - Teal accent */
-	--color-primary-50: oklch(0.979 0.021 166.113);
-	--color-primary-100: oklch(0.95 0.052 163.051);
+	/* Colors - Wall Street & Old Money Palette */
+	--color-background: #fafaf8; /* Warm off-white, like aged paper */
+	--color-foreground: #1a1a1a; /* Deep charcoal, not pure black */
+	--color-muted: #5a5a52; /* Warm gray */
+	--color-border: #d4d1c8; /* Subtle warm border */
+	--color-accent: #8b7355; /* Muted gold/bronze */
+	--color-primary-50: #f5f3ef;
+	--color-primary-100: #e8e4dc;
+	--color-navy: #1e3a5f; /* Deep navy blue */
+	--color-forest: #2d4a3e; /* Deep forest green */
+	--color-burgundy: #5c2e2e; /* Deep burgundy */
+	--color-gold: #b8956a; /* Classic gold */
+	--color-cream: #f8f6f1; /* Warm cream */
 	
 	/* Spacing */
 	--spacing-container: 1280px;
@@ -24,11 +30,18 @@
 		color: var(--color-foreground);
 		background-color: var(--color-background);
 		-webkit-font-smoothing: antialiased;
+		line-height: 1.7;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400; /* Headings in the design look relatively light/regular */
-		letter-spacing: -0.02em;
+		font-family: var(--font-display);
+		font-weight: 500; /* Traditional serif weight */
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+	}
+	
+	h1 {
+		font-weight: 600;
 	}
 }
 
