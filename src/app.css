@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-	/* Fonts - Traditional Banking Aesthetic */
-	--font-sans: 'Georgia', 'Times New Roman', serif;
+	/* Fonts - Premium Legal & Financial Aesthetic */
+	--font-sans: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
 	--font-mono: 'Courier New', monospace;
-	--font-display: 'Times New Roman', 'Georgia', serif;
+	--font-display: 'Playfair Display', 'Georgia', serif;
 
 	/* Colors - Wall Street & Old Money Palette */
 	--color-background: #fafaf8; /* Warm off-white, like aged paper */
@@ -35,13 +35,14 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: var(--font-display);
-		font-weight: 500; /* Traditional serif weight */
-		letter-spacing: -0.01em;
-		line-height: 1.2;
+		font-weight: 600; /* Authoritative weight */
+		letter-spacing: -0.02em; /* Refined, tight spacing */
+		line-height: 1.15;
 	}
 	
 	h1 {
-		font-weight: 600;
+		font-weight: 700; /* Bold, commanding presence */
+		letter-spacing: -0.025em; /* Extra tight for sophistication */
 	}
 }
 

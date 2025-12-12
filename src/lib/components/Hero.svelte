@@ -4,7 +4,7 @@
 		<div class="w-24 h-0.5 bg-gold mb-8"></div>
 		
 		<div class="max-w-4xl mb-12">
-			<h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight mb-8 text-navy leading-tight">
+			<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-navy" style="letter-spacing: -0.025em; line-height: 1.1; font-weight: 700;">
 				Qualified Demand for Companies With Sophisticated Buyers
 			</h1>
 			<p class="text-xl md:text-2xl text-foreground mb-6 leading-relaxed">
