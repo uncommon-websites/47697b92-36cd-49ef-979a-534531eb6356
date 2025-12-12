@@ -4,6 +4,7 @@
 	import FeaturesGrid from '$lib/components/FeaturesGrid.svelte';
 	import ChartSection from '$lib/components/ChartSection.svelte';
 	import FeatureBlocks from '$lib/components/FeatureBlocks.svelte';
+	import IndustriesSection from '$lib/components/IndustriesSection.svelte';
 	import UpdatesSection from '$lib/components/UpdatesSection.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 </script>
@@ -14,6 +15,7 @@
 	<FeaturesGrid />
 	<ChartSection />
 	<FeatureBlocks />
+	<IndustriesSection />
 	<UpdatesSection />
 	<Footer />
 </main>
