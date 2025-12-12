@@ -88,46 +88,43 @@
 			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
 		</div>
 		
-		<!-- Unique asymmetric layout with varying sizes -->
-		<div class="max-w-5xl mx-auto space-y-4">
-			<!-- Row 1: Three columns -->
-			<div class="flex flex-col md:flex-row gap-4">
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">Inconsistent pipeline</p>
+		<!-- Clean list layout with gold accents -->
+		<div class="max-w-4xl mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Inconsistent pipeline</p>
 				</div>
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">Referral dependency</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Referral dependency</p>
 				</div>
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">No dedicated demand channel</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">No dedicated demand channel</p>
 				</div>
-			</div>
-			
-			<!-- Row 2: Two columns (wider) -->
-			<div class="flex flex-col md:flex-row gap-4">
-				<div class="md:w-1/2 border-2 border-navy p-8 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-base font-display text-navy group-hover:text-gold transition-colors">Hard-to-reach buyers</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Hard-to-reach buyers</p>
 				</div>
-				<div class="md:w-1/2 border-2 border-navy p-8 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-base font-display text-navy group-hover:text-gold transition-colors">Brand-sensitive markets</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Brand-sensitive markets</p>
 				</div>
-			</div>
-			
-			<!-- Row 3: Full width featured -->
-			<div class="border-2 border-navy p-10 hover:border-gold hover:bg-cream transition-all duration-300 bg-cream/30 group">
-				<p class="text-lg font-display text-navy text-center group-hover:text-gold transition-colors">Long, complex sales cycles</p>
-			</div>
-			
-			<!-- Row 4: Three columns -->
-			<div class="flex flex-col md:flex-row gap-4">
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">Customer concentration risk</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Long, complex sales cycles</p>
 				</div>
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">Underperforming outbound teams</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Customer concentration risk</p>
 				</div>
-				<div class="md:w-1/3 border-2 border-navy p-6 hover:border-gold hover:bg-cream transition-all duration-300 group">
-					<p class="text-sm font-display text-navy group-hover:text-gold transition-colors">No forecasting visibility</p>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">Underperforming outbound teams</p>
+				</div>
+				
+				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
+					<p class="text-base font-display text-navy">No forecasting visibility</p>
 				</div>
 			</div>
 		</div>
