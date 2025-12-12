@@ -80,53 +80,127 @@
 </section>
 
 <!-- Problems We Solve -->
-<section class="py-20 border-b-2 border-navy">
+<script lang="ts">
+	import { onMount } from 'svelte';
+	
+	let sectionVisible = $state(false);
+	let itemsVisible = $state<boolean[]>(Array(9).fill(false));
+	
+	onMount(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						sectionVisible = true;
+						// Stagger the animation of each item
+						itemsVisible.forEach((_, index) => {
+							setTimeout(() => {
+								itemsVisible[index] = true;
+							}, index * 100);
+						});
+					}
+				});
+			},
+			{ threshold: 0.2 }
+		);
+		
+		const section = document.getElementById('problems-section');
+		if (section) observer.observe(section);
+		
+		return () => observer.disconnect();
+	});
+	
+	const problems = [
+		'Inconsistent pipeline',
+		'Referral dependency',
+		'No dedicated demand channel',
+		'Hard-to-reach buyers',
+		'Brand-sensitive markets',
+		'Long, complex sales cycles',
+		'Customer concentration risk',
+		'Underperforming outbound teams',
+		'No forecasting visibility'
+	];
+</script>
+
+<section id="problems-section" class="py-20 border-b-2 border-navy overflow-hidden">
 	<div class="container-custom">
-		<div class="text-center mb-16">
-			<div class="w-24 h-0.5 bg-gold mx-auto mb-6"></div>
+		<div class={[
+			'text-center mb-16 transition-all duration-1000',
+			sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+		]}>
+			<div class={[
+				'w-24 h-0.5 bg-gold mx-auto mb-6 transition-all duration-700 delay-200',
+				sectionVisible ? 'scale-x-100' : 'scale-x-0'
+			]}></div>
 			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Problems We Solve</h2>
-			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
+			<div class={[
+				'w-24 h-0.5 bg-gold mx-auto mt-6 transition-all duration-700 delay-200',
+				sectionVisible ? 'scale-x-100' : 'scale-x-0'
+			]}></div>
 		</div>
 		
-		<!-- Clean list layout with gold accents -->
-		<div class="max-w-4xl mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8">
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Inconsistent pipeline</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Referral dependency</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">No dedicated demand channel</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Hard-to-reach buyers</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Brand-sensitive markets</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Long, complex sales cycles</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Customer concentration risk</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">Underperforming outbound teams</p>
-				</div>
-				
-				<div class="border-l-2 border-gold pl-6 py-2 hover:border-navy transition-colors duration-300">
-					<p class="text-base font-display text-navy">No forecasting visibility</p>
-				</div>
+		<!-- Animated grid with staggered entrance -->
+		<div class="max-w-5xl mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				{#each problems as problem, index}
+					<div 
+						class={[
+							'group relative bg-background border-2 border-gold p-6 transition-all duration-500 cursor-pointer',
+							'hover:border-navy hover:scale-105 hover:-translate-y-1',
+							itemsVisible[index] ? 'opacity-100 translate-y-0 rotate-0' : 'opacity-0 translate-y-12 -rotate-3'
+						]}
+						style={`transition-delay: ${index * 50}ms`}
+					>
+						<!-- Animated border accent -->
+						<div class="absolute top-0 left-0 w-0 h-0.5 bg-navy transition-all duration-500 group-hover:w-full"></div>
+						<div class="absolute bottom-0 right-0 w-0 h-0.5 bg-navy transition-all duration-500 group-hover:w-full"></div>
+						<div class="absolute top-0 left-0 w-0.5 h-0 bg-navy transition-all duration-500 group-hover:h-full"></div>
+						<div class="absolute top-0 right-0 w-0.5 h-0 bg-navy transition-all duration-500 group-hover:h-full"></div>
+						
+						<!-- Number indicator -->
+						<div class={[
+							'absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gold flex items-center justify-center',
+							'font-display font-semibold text-sm text-navy transition-all duration-300',
+							'group-hover:scale-125 group-hover:bg-navy group-hover:text-gold'
+						]}>
+							{index + 1}
+						</div>
+						
+						<!-- Content -->
+						<div class="relative z-10">
+							<p class={[
+								'text-base font-display text-navy transition-all duration-300',
+								'group-hover:text-navy group-hover:translate-x-1'
+							]}>
+								{problem}
+							</p>
+						</div>
+						
+						<!-- Hover glow effect -->
+						<div class="absolute inset-0 bg-gold opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
+					</div>
+				{/each}
 			</div>
+		</div>
+		
+		<!-- Animated decorative elements -->
+		<div class="relative mt-16 h-32 overflow-hidden">
+			<div class={[
+				'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+				'w-64 h-64 border border-gold rounded-full transition-all duration-[2000ms]',
+				sectionVisible ? 'opacity-20 scale-100' : 'opacity-0 scale-0'
+			]}></div>
+			<div class={[
+				'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+				'w-48 h-48 border border-navy rounded-full transition-all duration-[2000ms] delay-300',
+				sectionVisible ? 'opacity-20 scale-100' : 'opacity-0 scale-0'
+			]}></div>
+			<div class={[
+				'absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2',
+				'w-32 h-32 bg-gold rounded-full transition-all duration-[2000ms] delay-500',
+				sectionVisible ? 'opacity-10 scale-100' : 'opacity-0 scale-0'
+			]}></div>
 		</div>
 	</div>
 </section>
