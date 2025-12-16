@@ -90,8 +90,8 @@
 				'w-24 h-0.5 bg-gold mx-auto mb-6 transition-all duration-700',
 				headerVisible ? 'scale-x-100' : 'scale-x-0'
 			]}></div>
-			<h2 class="text-4xl font-semibold mb-4 text-navy">How We Work</h2>
-			<p class="text-xl text-foreground max-w-2xl mx-auto leading-relaxed">
+			<h2 class="text-4xl md:text-5xl font-serif font-bold mb-4 text-navy">How We Work</h2>
+			<p class="text-xl text-foreground max-w-2xl mx-auto leading-relaxed font-sans">
 				Structured, advisory-grade process for sophisticated buyers
 			</p>
 			<div class={[
@@ -108,11 +108,11 @@
 					cardsVisible[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
 				]} style={`transition-delay: ${index * 50}ms`}>
 					<div class="flex items-center gap-3 mb-3">
-						<span class="font-mono text-sm text-gold font-bold transition-all duration-300 group-hover:scale-125">{step.number}</span>
+						<span class="font-sans text-sm text-gold font-bold transition-all duration-300 group-hover:scale-125">{step.number}</span>
 						<div class="h-0.5 bg-gold flex-1 transition-all duration-500 origin-left group-hover:scale-x-110"></div>
 					</div>
-					<h3 class="font-display font-semibold text-base text-navy transition-all duration-300 group-hover:text-gold">{step.title}</h3>
-					<p class="text-sm text-muted leading-relaxed">
+					<h3 class="font-serif font-bold text-xl text-navy transition-all duration-300 group-hover:text-gold">{step.title}</h3>
+					<p class="text-base text-muted leading-relaxed font-sans">
 						{step.description}
 					</p>
 					

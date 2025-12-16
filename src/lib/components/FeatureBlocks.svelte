@@ -125,9 +125,18 @@
 				'border-l-4 border-gold pl-8 transition-all duration-1000',
 				whatWeDoVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
 			]}>
-				<h2 class="text-3xl font-display font-semibold mb-6 text-navy">What We Do</h2>
-				<p class="text-base text-foreground leading-relaxed mb-6">
-					We build predictable, high-quality demand channels for companies with sophisticated buyers — often outperforming referrals.
+				<h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-navy">What We Do</h2>
+				<p class="text-lg text-foreground leading-relaxed mb-6 font-sans">
+					We specialize in markets where buyers are sophisticated, brand reputation is high, and growth is on the horizon.
+			</p>
+			<p class="text-lg text-foreground leading-relaxed mb-6 font-sans">
+				Our approach combines deep market intelligence with enterprise-grade execution, designed specifically for industries where trust, precision, and reputation are non-negotiable. We work with leadership teams who understand that sustainable growth requires more than volume—it demands quality, strategic alignment, and a methodology built for careful, considered buyers.
+			</p>
+			<p class="text-lg text-foreground leading-relaxed mb-6 font-sans">
+				From institutional finance to legacy, strong markets in enterprise technology, we serve sectors where traditional demand generation fails. Our advisory-led model ensures every engagement is structured around your specific commercial reality, with clear benchmarks, conservative forecasting, and complete transparency at every stage.
+			</p>
+			<p class="text-lg text-foreground leading-relaxed mb-6 font-sans">
+				We don't replace your referral network or warm relationships. Instead, we build parallel, predictable channels that complement and scale what's already working, giving you control over pipeline without compromising the brand equity you've spent years building.
 				</p>
 			</div>
 
@@ -136,14 +145,14 @@
 				'border-l-4 border-gold pl-8 transition-all duration-1000',
 				whoWeServeVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
 			]}>
-				<h2 class="text-3xl font-display font-semibold mb-6 text-navy">Who We Serve</h2>
-				<div class="space-y-6 text-sm">
+				<h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-navy">Who We Serve</h2>
+				<div class="space-y-6">
 					<div class={[
 						'transition-all duration-700',
 						marketTypesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
 					]}>
-						<h3 class="font-display font-semibold mb-3 text-navy text-base">Market Types</h3>
-						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+						<h3 class="font-serif font-bold mb-3 text-navy text-xl">Market Types</h3>
+						<ul class="text-muted space-y-2 text-base leading-relaxed font-sans">
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Legacy & complex markets</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Fast-growth teams outpacing demand</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Referral-dependent businesses</li>
@@ -154,8 +163,8 @@
 						'transition-all duration-700',
 						commercialProfilesVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
 					]}>
-						<h3 class="font-display font-semibold mb-3 text-navy text-base">Commercial Profiles</h3>
-						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+						<h3 class="font-serif font-bold mb-3 text-navy text-xl">Commercial Profiles</h3>
+						<ul class="text-muted space-y-2 text-base leading-relaxed font-sans">
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> High ACV / long sales cycles</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Low ACV / brand-sensitive volume</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Existing outbound teams</li>
@@ -166,8 +175,8 @@
 						'transition-all duration-700',
 						goodFitVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
 					]}>
-						<h3 class="font-display font-semibold mb-3 text-navy text-base">Good-Fit Clients</h3>
-						<ul class="text-muted space-y-2 text-sm leading-relaxed">
+						<h3 class="font-serif font-bold mb-3 text-navy text-xl">Good-Fit Clients</h3>
+						<ul class="text-muted space-y-2 text-base leading-relaxed font-sans">
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Clear sales KPIs and close rates</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Leadership alignment (Finance, Sales, Ops)</li>
 							<li class="flex items-start gap-2"><span class="text-gold">•</span> Non-commodity offerings</li>
@@ -190,7 +199,7 @@
 				'w-24 h-0.5 bg-gold mx-auto mb-6 transition-all duration-700',
 				excelsHeaderVisible ? 'scale-x-100' : 'scale-x-0'
 			]}></div>
-			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Where Our Advisory Excels</h2>
+			<h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-navy">Where Our Advisory Excels</h2>
 			<div class={[
 				'w-24 h-0.5 bg-gold mx-auto mt-6 transition-all duration-700',
 				excelsHeaderVisible ? 'scale-x-100' : 'scale-x-0'
@@ -204,8 +213,8 @@
 					'hover:border-gold hover:scale-105 hover:-translate-y-2',
 					excelsCardsVisible[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
 				]} style={`transition-delay: ${index * 100}ms`}>
-					<h3 class="font-display font-semibold text-base text-navy transition-all duration-300 group-hover:text-gold">{item.title}</h3>
-					<p class="text-sm text-muted leading-relaxed">{item.description}</p>
+					<h3 class="font-serif font-bold text-xl text-navy transition-all duration-300 group-hover:text-gold">{item.title}</h3>
+					<p class="text-base text-muted leading-relaxed font-sans">{item.description}</p>
 					
 					<!-- Hover glow effect -->
 					<div class="absolute inset-0 bg-gold opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
@@ -227,7 +236,7 @@
 				'w-24 h-0.5 bg-gold mx-auto mb-6 transition-all duration-700 delay-200',
 				sectionVisible ? 'scale-x-100' : 'scale-x-0'
 			]}></div>
-			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Problems We Solve</h2>
+			<h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-navy">Problems We Solve</h2>
 			<div class={[
 				'w-24 h-0.5 bg-gold mx-auto mt-6 transition-all duration-700 delay-200',
 				sectionVisible ? 'scale-x-100' : 'scale-x-0'
@@ -235,7 +244,7 @@
 		</div>
 		
 		<!-- Animated grid with staggered entrance -->
-		<div class="max-w-5xl mx-auto">
+		<div class="max-w-6xl mx-auto">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{#each problems as problem, index}
 					<div 
@@ -255,16 +264,16 @@
 						<!-- Number indicator -->
 						<div class={[
 							'absolute -top-3 -left-3 w-8 h-8 rounded-full bg-gold flex items-center justify-center',
-							'font-display font-semibold text-sm text-navy transition-all duration-300',
+							'font-sans font-bold text-sm text-navy transition-all duration-300',
 							'group-hover:scale-125 group-hover:bg-navy group-hover:text-gold'
 						]}>
 							{index + 1}
 						</div>
-						
+
 						<!-- Content -->
 						<div class="relative z-10">
 							<p class={[
-								'text-base font-display text-navy transition-all duration-300',
+								'text-lg font-sans font-semibold text-navy transition-all duration-300',
 								'group-hover:text-navy group-hover:translate-x-1'
 							]}>
 								{problem}

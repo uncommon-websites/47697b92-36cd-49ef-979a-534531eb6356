@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 .svelte-kit
 
 .claude
+
+# Contact form submissions (contains sensitive data)
+/data/contacts.json

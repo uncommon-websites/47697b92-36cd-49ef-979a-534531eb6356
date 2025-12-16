@@ -16,8 +16,8 @@
 	<div class="container-custom">
 		<div class="text-center mb-16">
 			<div class="w-24 h-0.5 bg-gold mx-auto mb-6"></div>
-			<h2 class="text-3xl font-display font-semibold mb-4 text-navy">Industries We Serve</h2>
-			<p class="text-base text-foreground max-w-2xl mx-auto leading-relaxed">
+			<h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-navy">Industries We Serve</h2>
+			<p class="text-lg text-foreground max-w-2xl mx-auto leading-relaxed font-sans">
 				Specialized expertise across brand-sensitive and complex markets
 			</p>
 			<div class="w-24 h-0.5 bg-gold mx-auto mt-6"></div>
@@ -34,13 +34,13 @@
 				<div class="industries-content">
 					{#each industries as industry}
 						<div class="industry-item">
-							<span class="text-sm font-display font-semibold text-navy">{industry}</span>
+							<span class="text-base font-sans font-semibold text-navy">{industry}</span>
 						</div>
 					{/each}
 					<!-- Duplicate for seamless loop -->
 					{#each industries as industry}
 						<div class="industry-item">
-							<span class="text-sm font-display font-semibold text-navy">{industry}</span>
+							<span class="text-base font-sans font-semibold text-navy">{industry}</span>
 						</div>
 					{/each}
 				</div>

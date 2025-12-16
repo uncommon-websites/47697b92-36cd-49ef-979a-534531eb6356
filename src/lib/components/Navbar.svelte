@@ -24,33 +24,24 @@
 					fill="currentColor"
 				/>
 			</svg>
-			<span class="font-display font-semibold text-navy">Avenfield Advisory</span>
+			<span class="font-serif font-bold text-navy">Avenfield Advisory</span>
 		</a>
 
 		<!-- Links -->
-		<div class="hidden md:flex items-center gap-10 font-mono text-xs text-navy uppercase tracking-wider">
+		<div class="hidden md:flex items-center gap-10 font-sans text-sm text-navy uppercase tracking-wide font-semibold">
 			<a href="#how-we-work" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">How We Work</a>
 			<a href="#what-we-do" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">What We Do</a>
 			<a href="#who-we-serve" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">Who We Serve</a>
 			<a href="#why-us" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">Why Us</a>
 		</div>
 
-		<!-- CTA -->
-		<div class="flex items-center gap-4">
-			<a href="#contact" class="hidden md:flex items-center gap-2 border-2 border-navy bg-navy text-cream px-4 py-2 text-xs font-mono hover:bg-forest hover:border-forest transition-all duration-300 uppercase tracking-wider hover:scale-105">
-				Book a Discovery Call
-				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
-				</svg>
-			</a>
-			<div class="md:hidden">
-				<!-- Mobile Menu Icon -->
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-navy">
-					<line x1="3" y1="12" x2="21" y2="12"></line>
-					<line x1="3" y1="6" x2="21" y2="6"></line>
-					<line x1="3" y1="18" x2="21" y2="18"></line>
-				</svg>
-			</div>
+		<!-- Mobile Menu Icon -->
+		<div class="md:hidden">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-navy">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
 		</div>
 	</div>
 </nav>

@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-	/* Fonts - Premium Legal & Financial Aesthetic */
-	--font-sans: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
-	--font-mono: 'Courier New', monospace;
+	/* Fonts - Modern Professional with Serif Accent */
+	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-serif: 'Playfair Display', 'Georgia', serif;
+	--font-mono: 'SF Mono', 'Monaco', 'Consolas', monospace;
 	--font-display: 'Playfair Display', 'Georgia', serif;
 
 	/* Colors - Wall Street & Old Money Palette */
-	--color-background: #fafaf8; /* Warm off-white, like aged paper */
-	--color-foreground: #1a1a1a; /* Deep charcoal, not pure black */
-	--color-muted: #5a5a52; /* Warm gray */
-	--color-border: #d4d1c8; /* Subtle warm border */
-	--color-accent: #8b7355; /* Muted gold/bronze */
+	--color-background: #fafaf8;
+	--color-foreground: #1a1a1a;
+	--color-muted: #4a4a4a; /* Darker for better readability */
+	--color-border: #d4d1c8;
+	--color-accent: #8b7355;
 	--color-primary-50: #f5f3ef;
 	--color-primary-100: #e8e4dc;
-	--color-navy: #1e3a5f; /* Deep navy blue */
-	--color-forest: #2d4a3e; /* Deep forest green */
-	--color-burgundy: #5c2e2e; /* Deep burgundy */
-	--color-gold: #b8956a; /* Classic gold */
-	--color-cream: #f8f6f1; /* Warm cream */
-	
+	--color-navy: #1e3a5f;
+	--color-forest: #2d4a3e;
+	--color-burgundy: #5c2e2e;
+	--color-gold: #b8956a;
+	--color-cream: #f8f6f1;
+
 	/* Spacing */
-	--spacing-container: 1280px;
+	--spacing-container: 1400px;
 }
 
 @layer base {
@@ -30,19 +31,57 @@
 		color: var(--color-foreground);
 		background-color: var(--color-background);
 		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		line-height: 1.7;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	/* Headings use serif for elegance */
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		color: var(--color-navy);
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+	}
+
+	h2 {
+		font-size: 2.75rem;
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+		font-weight: 600;
+	}
+
+	/* Body text uses sans-serif for readability */
+	p {
+		font-size: 1.125rem;
+		line-height: 1.8;
+		font-weight: 400;
+	}
+
+	/* Lists inherit body styles */
+	li {
+		font-size: 1.125rem;
 		line-height: 1.7;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: var(--font-display);
-		font-weight: 600; /* Authoritative weight */
-		letter-spacing: -0.02em; /* Refined, tight spacing */
-		line-height: 1.15;
+	strong, b {
+		font-weight: 600;
 	}
-	
-	h1 {
-		font-weight: 700; /* Bold, commanding presence */
-		letter-spacing: -0.025em; /* Extra tight for sophistication */
+
+	/* Links */
+	a {
+		transition: color 0.2s ease;
 	}
 }
 
@@ -51,8 +90,15 @@
 		max-width: var(--spacing-container);
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		.container-custom {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
 	}
 	
 	.text-balance {

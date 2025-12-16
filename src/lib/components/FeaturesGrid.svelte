@@ -61,8 +61,8 @@
 				'w-24 h-0.5 bg-gold mx-auto mb-6 transition-all duration-700',
 				headerVisible ? 'scale-x-100' : 'scale-x-0'
 			]}></div>
-			<h2 class="text-4xl font-display font-semibold mb-4 text-navy">Why Leading Companies Choose Us</h2>
-			<p class="text-foreground text-base max-w-2xl mx-auto leading-relaxed">
+			<h2 class="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">Why Leading Companies Choose Us</h2>
+			<p class="text-foreground text-lg max-w-2xl mx-auto leading-relaxed font-medium">
 				We combine deep market expertise with enterprise-grade execution to deliver results that matter.
 			</p>
 			<div class={[
@@ -83,8 +83,8 @@
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={feature.icon}></path>
 						</svg>
 					</div>
-					<h3 class="font-display font-semibold text-base text-navy transition-colors duration-300 group-hover:text-gold">{feature.title}</h3>
-					<p class="text-sm text-muted leading-relaxed">
+					<h3 class="font-display font-bold text-lg text-navy transition-colors duration-300 group-hover:text-gold">{feature.title}</h3>
+					<p class="text-base text-muted leading-relaxed font-medium">
 						{feature.description}
 					</p>
 				</div>
