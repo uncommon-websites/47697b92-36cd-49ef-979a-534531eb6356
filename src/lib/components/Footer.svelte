@@ -23,12 +23,11 @@
 			<div>
 				<h4 class="font-sans text-sm uppercase text-gold mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Navigate</h4>
 				<ul class="space-y-3 text-base text-cream/90 font-sans">
-					<li><a href="#hero" class="hover:text-gold transition-colors">Hero</a></li>
 					<li><a href="#how-we-work" class="hover:text-gold transition-colors">How We Work</a></li>
 					<li><a href="#what-we-do" class="hover:text-gold transition-colors">What We Do</a></li>
 					<li><a href="#who-we-serve" class="hover:text-gold transition-colors">Who We Serve</a></li>
 					<li><a href="#why-us" class="hover:text-gold transition-colors">Why Us</a></li>
-					<li><a href="#contact" class="hover:text-gold transition-colors">Book Call</a></li>
+					<li><a href="#contact" class="hover:text-gold transition-colors">Contact Us</a></li>
 				</ul>
 			</div>
 
