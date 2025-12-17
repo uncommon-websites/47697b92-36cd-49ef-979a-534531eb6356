@@ -47,9 +47,15 @@
 			<!-- Block 4: Offices -->
 			<div>
 				<h4 class="font-sans text-sm uppercase text-gold mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Offices</h4>
-				<ul class="space-y-3 text-base text-cream/90 font-sans">
-					<li>6th Floor, 2 Kingdom Street<br/>London, W2 6BD<br/>United Kingdom</li>
-					<li>1325 Avenue of the Americas<br/>New York, NY 10019<br/>United States</li>
+				<ul class="space-y-5 text-base text-cream/90 font-sans">
+					<li>
+						<span class="text-gold font-semibold">United Kingdom:</span><br/>
+						6th Floor, 2 Kingdom Street<br/>London, W2 6BD
+					</li>
+					<li>
+						<span class="text-gold font-semibold">United States:</span><br/>
+						1325 Avenue of the Americas<br/>New York, NY 10019
+					</li>
 				</ul>
 			</div>
 

@@ -103,8 +103,18 @@
 		isSubmitting = true;
 
 		try {
-			// Simulate form submission (backend to be added later)
-			await new Promise(resolve => setTimeout(resolve, 1000));
+			const response = await fetch('https://formspree.io/f/xaqwwwqn', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: JSON.stringify(formData)
+			});
+
+			if (!response.ok) {
+				throw new Error('Form submission failed');
+			}
 
 			// Reset form on success
 			formData = {

@@ -2,10 +2,11 @@
 
 @theme {
 	/* Fonts - Modern Professional with Serif Accent */
-	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-sans: 'Times New Roman', Times, Georgia, serif;
 	--font-serif: 'Playfair Display', 'Georgia', serif;
 	--font-mono: 'SF Mono', 'Monaco', 'Consolas', monospace;
 	--font-display: 'Playfair Display', 'Georgia', serif;
+	--font-body: 'Times New Roman', Times, Georgia, serif;
 
 	/* Colors - Wall Street & Old Money Palette */
 	--color-background: #fafaf8;
