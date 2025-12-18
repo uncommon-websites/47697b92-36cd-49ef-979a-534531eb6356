@@ -1,10 +1,10 @@
-<footer class="pt-24 pb-10 bg-navy text-cream border-t-4 border-gold">
+<footer class="pt-12 md:pt-24 pb-8 md:pb-10 bg-navy text-cream border-t-4 border-gold">
 	<div class="container-custom">
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+		<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 mb-10 md:mb-20">
 			<!-- Block 1: Company Identity -->
-			<div class="lg:col-span-1">
-				<a href="/" class="text-xl font-serif font-bold tracking-tight flex items-center gap-3 mb-6">
-					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold">
+			<div class="col-span-2 md:col-span-1 lg:col-span-1">
+				<a href="/" class="text-lg md:text-xl font-serif font-bold tracking-tight flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold md:w-8 md:h-8">
 						<path
 							fill-rule="evenodd"
 							clip-rule="evenodd"
@@ -13,16 +13,16 @@
 						/>
 					</svg>
 				</a>
-				<div class="border-l-2 border-gold pl-4">
-					<p class="text-base text-cream mb-2 font-serif font-semibold">Avenfield Advisory</p>
-					<p class="text-base text-cream/80 font-sans">Revenue & Demand Advisory</p>
+				<div class="border-l-2 border-gold pl-3 md:pl-4">
+					<p class="text-sm md:text-base text-cream mb-1 md:mb-2 font-serif font-semibold">Avenfield Advisory</p>
+					<p class="text-sm md:text-base text-cream/80 font-sans">Revenue & Demand Advisory</p>
 				</div>
 			</div>
 
 			<!-- Block 2: Page Anchors -->
 			<div>
-				<h4 class="font-sans text-sm uppercase text-gold mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Navigate</h4>
-				<ul class="space-y-3 text-base text-cream/90 font-sans">
+				<h4 class="font-sans text-xs md:text-sm uppercase text-gold mb-4 md:mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Navigate</h4>
+				<ul class="space-y-2 md:space-y-3 text-sm md:text-base text-cream/90 font-sans">
 					<li><a href="#how-we-work" class="hover:text-gold transition-colors">How We Work</a></li>
 					<li><a href="#what-we-do" class="hover:text-gold transition-colors">What We Do</a></li>
 					<li><a href="#who-we-serve" class="hover:text-gold transition-colors">Who We Serve</a></li>
@@ -33,8 +33,8 @@
 
 			<!-- Block 3: Pages -->
 			<div>
-				<h4 class="font-sans text-sm uppercase text-gold mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Resources</h4>
-				<ul class="space-y-3 text-base text-cream/90 font-sans">
+				<h4 class="font-sans text-xs md:text-sm uppercase text-gold mb-4 md:mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Resources</h4>
+				<ul class="space-y-2 md:space-y-3 text-sm md:text-base text-cream/90 font-sans">
 					<li><a href="#results" class="hover:text-gold transition-colors">Recent Successes</a></li>
 					<li><a href="#results" class="hover:text-gold transition-colors">Results</a></li>
 					<li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
@@ -44,9 +44,9 @@
 			</div>
 
 			<!-- Block 4: Offices -->
-			<div>
-				<h4 class="font-sans text-sm uppercase text-gold mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Offices</h4>
-				<ul class="space-y-5 text-base text-cream/90 font-sans">
+			<div class="col-span-2 md:col-span-1">
+				<h4 class="font-sans text-xs md:text-sm uppercase text-gold mb-4 md:mb-6 tracking-wide border-b border-gold/30 pb-2 font-semibold">Offices</h4>
+				<ul class="grid grid-cols-2 md:grid-cols-1 gap-4 md:space-y-5 text-sm md:text-base text-cream/90 font-sans">
 					<li>
 						<span class="text-gold font-semibold">United Kingdom:</span><br/>
 						6th Floor, 2 Kingdom Street<br/>London, W2 6BD
@@ -61,8 +61,8 @@
 		</div>
 
 		<!-- Block 6: Legal / Bottom Bar -->
-		<div class="pt-10 border-t-2 border-gold/30">
-			<p class="text-base text-cream/80 text-center font-sans">
+		<div class="pt-6 md:pt-10 border-t-2 border-gold/30">
+			<p class="text-xs md:text-base text-cream/80 text-center font-sans">
 				© 2025 Avenfield Advisory. All rights reserved.
 			</p>
 		</div>

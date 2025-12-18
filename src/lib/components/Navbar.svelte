@@ -1,22 +1,32 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	
+
 	let navVisible = $state(false);
-	
+	let mobileMenuOpen = $state(false);
+
 	onMount(() => {
-		// Slide down animation on mount
-		setTimeout(() => navVisible = true, 100);
+		// Reduced animation delay on mobile
+		const isMobile = window.matchMedia('(max-width: 768px)').matches;
+		setTimeout(() => navVisible = true, isMobile ? 50 : 100);
 	});
+
+	function toggleMobileMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
+
+	function closeMobileMenu() {
+		mobileMenuOpen = false;
+	}
 </script>
 
 <nav class={[
-	'border-b-2 border-navy bg-cream sticky top-0 z-50 transition-all duration-700',
+	'border-b-2 border-navy bg-cream sticky top-0 z-50 transition-all duration-500 md:duration-700',
 	navVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
 ]}>
-	<div class="container-custom h-20 flex items-center justify-between">
+	<div class="container-custom h-16 md:h-20 flex items-center justify-between">
 		<!-- Logo -->
-		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-3 transition-all duration-300 hover:scale-105">
-			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-navy transition-colors duration-300 hover:text-gold">
+		<a href="/" class="text-lg md:text-xl font-bold tracking-tight flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-105">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-navy transition-colors duration-300 hover:text-gold md:w-7 md:h-7">
 				<path
 					fill-rule="evenodd"
 					clip-rule="evenodd"
@@ -24,10 +34,10 @@
 					fill="currentColor"
 				/>
 			</svg>
-			<span class="font-serif font-bold text-navy">Avenfield Advisory</span>
+			<span class="font-serif font-bold text-navy text-base md:text-lg">Avenfield Advisory</span>
 		</a>
 
-		<!-- Links -->
+		<!-- Desktop Links -->
 		<div class="hidden md:flex items-center gap-10 font-sans text-sm text-navy uppercase tracking-wide font-semibold">
 			<a href="#how-we-work" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">How We Work</a>
 			<a href="#what-we-do" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">What We Do</a>
@@ -35,13 +45,69 @@
 			<a href="#why-us" class="hover:text-gold transition-all duration-300 border-b-2 border-transparent hover:border-gold pb-1 hover:-translate-y-0.5">Why Us</a>
 		</div>
 
-		<!-- Mobile Menu Icon -->
-		<div class="md:hidden">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-navy">
-				<line x1="3" y1="12" x2="21" y2="12"></line>
-				<line x1="3" y1="6" x2="21" y2="6"></line>
-				<line x1="3" y1="18" x2="21" y2="18"></line>
-			</svg>
+		<!-- Mobile Menu Button -->
+		<button
+			onclick={toggleMobileMenu}
+			class="md:hidden p-2 -mr-2 text-navy focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream rounded"
+			aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+			aria-expanded={mobileMenuOpen}
+		>
+			{#if mobileMenuOpen}
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform duration-200">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			{:else}
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform duration-200">
+					<line x1="3" y1="12" x2="21" y2="12"></line>
+					<line x1="3" y1="6" x2="21" y2="6"></line>
+					<line x1="3" y1="18" x2="21" y2="18"></line>
+				</svg>
+			{/if}
+		</button>
+	</div>
+
+	<!-- Mobile Menu Dropdown -->
+	<div class={[
+		'md:hidden overflow-hidden transition-all duration-300 ease-out bg-cream border-t border-navy/10',
+		mobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+	]}>
+		<div class="container-custom py-4 space-y-1">
+			<a
+				href="#how-we-work"
+				onclick={closeMobileMenu}
+				class="block py-3 px-4 text-navy font-sans text-sm uppercase tracking-wide font-semibold hover:bg-navy/5 hover:text-gold transition-colors duration-200 border-l-2 border-transparent hover:border-gold"
+			>
+				How We Work
+			</a>
+			<a
+				href="#what-we-do"
+				onclick={closeMobileMenu}
+				class="block py-3 px-4 text-navy font-sans text-sm uppercase tracking-wide font-semibold hover:bg-navy/5 hover:text-gold transition-colors duration-200 border-l-2 border-transparent hover:border-gold"
+			>
+				What We Do
+			</a>
+			<a
+				href="#who-we-serve"
+				onclick={closeMobileMenu}
+				class="block py-3 px-4 text-navy font-sans text-sm uppercase tracking-wide font-semibold hover:bg-navy/5 hover:text-gold transition-colors duration-200 border-l-2 border-transparent hover:border-gold"
+			>
+				Who We Serve
+			</a>
+			<a
+				href="#why-us"
+				onclick={closeMobileMenu}
+				class="block py-3 px-4 text-navy font-sans text-sm uppercase tracking-wide font-semibold hover:bg-navy/5 hover:text-gold transition-colors duration-200 border-l-2 border-transparent hover:border-gold"
+			>
+				Why Us
+			</a>
+			<a
+				href="#contact"
+				onclick={closeMobileMenu}
+				class="block py-3 px-4 mt-2 bg-navy text-cream font-sans text-sm uppercase tracking-wide font-semibold text-center hover:bg-gold hover:text-navy transition-colors duration-200"
+			>
+				Contact Us
+			</a>
 		</div>
 	</div>
 </nav>
